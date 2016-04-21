@@ -28,6 +28,11 @@ describe 'bubble::default' do
     its(:stdout) { should contain('virbr0-nic')}
   end
 
+  describe file('/etc/resolv.conf') do
+    its(:content) { should match /^search cloud.lan$/ }
+    its(:content) { should match /^nameserver 192.168.22.1$/ }
+  end
+
   describe command('cd /data/shared/deploy; ./kvm_local_deploy.py --deploy-role cloudstack-mgt-dev -d 1 --force') do
     its(:stdout) {should contain('Examining the guest')}
     its(:stdout) {should contain('Installing firstboot script')}

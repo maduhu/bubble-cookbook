@@ -22,4 +22,9 @@ describe 'bubble::default' do
     its(:stdout) { should contain('tap_vpn')}
     its(:stdout) { should contain('virbr0-nic')}
   end
+
+  describe file('/etc/resolv.conf') do
+    its(:content) { should match /^search cloud.lan$/ }
+    its(:content) { should match /^nameserver 192.168.22.1$/ }
+  end
 end
