@@ -11,15 +11,15 @@ Run this from the host you create The Bubble (either as root or using sudo):
 1. Make sure you comply with the requirements and Centos 7.2 is installed.
 2. Download and run the pre-install script:
 
-```
-source <(curl -L https://raw.githubusercontent.com/MissionCriticalCloud/bubble-cookbook/master/test/localinstall/install.sh)
-```
+    ```
+    source <(curl -L https://raw.githubusercontent.com/MissionCriticalCloud/bubble-cookbook/master/test/localinstall/install.sh)
+    ```
 3. Rename the user file `example.json` in `test/fixtures/data_bags/users` to your username. Edit the contents of the file with your username and public ssh key.
 4. Start test-kitchen:
 
-```
-kitchen converge
-```
+    ```
+    kitchen converge
+    ```
 5. Reboot!
 
    Run this from your laptop, to connect to The Bubble:
