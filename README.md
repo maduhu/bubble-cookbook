@@ -42,8 +42,10 @@ For easy passwordless access to the nested VMs it is recommended to configure yo
 
 To just provision a single machine without the presence of Chef server, either use:
 * Chef client; uses only Chef client and the bubble-blueprint repository: [MissionCriticalCloud/bubble-blueprint] (https://github.com/MissionCriticalCloud/bubble-blueprint)
-* Kitchen; uses Chef client and provides tests to check the configuration: [README](test/localinstall/README.md)
+* Test-Kitchen; uses Chef client and provides tests to check the configuration: [README](test/localinstall/README.md)
 
+The following video gives a demonstration on deploying a bubble with test-kitchen:
+[![Demo of Bubble provisioned with Kitchen](https://cloud.githubusercontent.com/assets/2699104/14817345/fa6611c0-0bb6-11e6-8b2f-1aef41189e06.png)](https://youtu.be/gNYIarrXIyE "Demo of Bubble provisioned with Kitchen")
 
 Contributing
 ------------
