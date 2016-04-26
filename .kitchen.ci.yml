@@ -14,10 +14,6 @@ driver:
     pf_open_firewall:       False
     pf_trusted_networks:
     - <%= ENV["TRUSTED_NETWORKS"]  %>
-    port_forwarding_rules:
-    - privateport: 443
-      publicport: 50001
-      generate_firewall: True
     ssh_user:               <%= ENV["SSH_USER"] || 'vagrant' %>
 
 provisioner:
@@ -34,12 +30,22 @@ platforms:
 
 suites:
   - name: default
+    driver:
+      customize:
+        port_forwarding_rules:
+        - privateport: 443
+          publicport: 50001
+          generate_firewall: True
     run_list:
       - recipe[bubble::default]
   - name: mgt-kvm-acs
     driver:
       customize:
         disk_offering_name:     <%= ENV["DISK_OFFERING_NAME"] %>
+        port_forwarding_rules:
+        - privateport: 443
+          publicport: 50002
+          generate_firewall: True
     run_list:
       - recipe[bubble::default]
     attributes:
@@ -49,6 +55,10 @@ suites:
     driver:
       customize:
         disk_offering_name:     <%= ENV["DISK_OFFERING_NAME"] %>
+        port_forwarding_rules:
+        - privateport: 443
+          publicport: 50003
+          generate_firewall: True
     run_list:
       - recipe[bubble::default]
     attributes:
@@ -58,6 +68,10 @@ suites:
     driver:
       customize:
         disk_offering_name:     <%= ENV["DISK_OFFERING_NAME"] %>
+        port_forwarding_rules:
+        - privateport: 443
+          publicport: 50004
+          generate_firewall: True
     run_list:
       - recipe[bubble::default]
     attributes:

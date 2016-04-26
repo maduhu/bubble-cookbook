@@ -1,30 +1,5 @@
 require 'spec_helper'
 
 describe 'bubble::default' do
-  describe service('libvirtd') do
-    it { should be_enabled }
-    it { should be_running }
-  end
-
-  describe command('curl -s http://127.0.0.1:8080') do
-    its(:stdout) { should contain('password') }
-  end
-
-  describe command('curl -s http://127.0.0.1/latest/meta-data/instance-id') do
-    its(:stdout) { should match(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/) }
-  end
-
-  describe command('virsh net-list') do
-    its(:stdout) { should match(/NAT\s+active/)}
-  end
-
-  describe command('brctl show') do
-    its(:stdout) { should contain('tap_vpn')}
-    its(:stdout) { should contain('virbr0-nic')}
-  end
-
-  describe file('/etc/resolv.conf') do
-    its(:content) { should match /^search cloud.lan$/ }
-    its(:content) { should match /^nameserver 192.168.22.1$/ }
-  end
+  include_examples 'bubble::default_tests'
 end
