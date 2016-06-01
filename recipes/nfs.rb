@@ -22,7 +22,7 @@ nfs_export '/data' do
   network '192.168.22.0/24'
   writeable true
   sync true
-  options ['no_root_squash', 'async']
+  options ['no_root_squash', 'async', 'fsid=1']
 end
 
 # Enable and start rpcbind
