@@ -49,3 +49,30 @@ templates.each do |dest_name, urls|
     action :nothing
   end
 end
+
+remote_file "#{dest_path}/#{node['bubble']['systemvm_template']['internal_md5']}" do
+  source "#{node['bubble']['systemvm_template']['jenkins_url']}/#{node['bubble']['systemvm_template']['jenkins_md5']}"
+  mode '0644'
+  backup false
+  notifies :run, "ruby_block[download_systemvm_templates]", :immediately
+end
+
+ruby_block 'download_systemvm_templates' do
+  block do
+    File.readlines("#{dest_path}/#{node['bubble']['systemvm_template']['internal_md5']}").map do |line|
+      file_extension = "#{line.split('.')[-2]}.gz"
+
+      f = Chef::Resource::File::RemoteFile.new("#{dest_path}/#{node['bubble']['systemvm_template']['name']}.#{file_extension}", run_context)
+      f.source "#{node['bubble']['systemvm_template']['jenkins_url']}/#{line.split[1]}"
+      f.mode '0644'
+      f.backup false
+      f.run_action :create
+
+      g = Chef::Resource::Execute.new("extract_gzip_file_#{node['bubble']['systemvm_template']['name']}.#{file_extension}", run_context)
+      g.cwd "#{dest_path}"
+      g.command "gunzip -f #{node['bubble']['systemvm_template']['name']}.#{file_extension}"
+      g.run_action :run
+    end
+  end
+  action :nothing
+end
