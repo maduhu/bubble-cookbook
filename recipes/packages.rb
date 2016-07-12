@@ -7,7 +7,7 @@
 end
 
 # Extra tools
-%w(git virt-top screen vim openssh-askpass supervisor deltarpm sshpass byobu bash-completion).each do |pkg|
+%w(git virt-top screen vim openssh-askpass supervisor deltarpm sshpass byobu bash-completion nmap).each do |pkg|
   package pkg do
     action :install
   end
@@ -22,6 +22,14 @@ end
 
 # Python packages for the deploy scripts
 %w(python-pip python-bottle python-argparse python-jinja2).each do |pkg|
+  package pkg do
+    action :install
+  end
+end
+
+# Packages for running marvin (compile scripts) on the bubble itself
+%w(maven python-paramiko ws-commons-util genisoimage gcc python MySQL-python mariadb mysql-connector-python
+   ).each do |pkg|
   package pkg do
     action :install
   end
