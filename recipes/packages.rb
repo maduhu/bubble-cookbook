@@ -7,7 +7,7 @@
 end
 
 # Extra tools
-%w(git virt-top screen vim openssh-askpass supervisor deltarpm sshpass byobu).each do |pkg|
+%w(git virt-top screen vim openssh-askpass supervisor deltarpm sshpass byobu bash-completion).each do |pkg|
   package pkg do
     action :install
   end
