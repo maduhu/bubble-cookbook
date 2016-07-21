@@ -34,3 +34,25 @@ end
     action :install
   end
 end
+
+# required java & tools
+%w(apache-commons-daemon-jsvc java-1.8.0-openjdk-devel.x86_64 libffi-devel).each do |pkg|
+  package pkg do
+    action :install
+  end
+end
+
+# tools & clients
+%w(mariadb-server nc nfs-utils openssh-clients openssl-devel rpm-build setroubleshoot wget).each do |pkg|
+  package pkg do
+    action :install
+  end
+end
+
+# python & ruby tooling
+%w(python-devel python-ecdsa python-setuptools rubygems).each do |pkg|
+  package pkg do
+    action :install
+  end
+end
+
