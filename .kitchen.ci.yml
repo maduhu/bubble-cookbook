@@ -38,6 +38,11 @@ suites:
           generate_firewall: True
     run_list:
       - recipe[bubble::default]
+    attributes:
+      authorization:
+        sudo:
+          users:
+           - <%= ENV["SSH_USER"] || 'vagrant' %>
   - name: mgt-kvm-acs
     driver:
       customize:
@@ -51,6 +56,10 @@ suites:
     attributes:
       bubble:
         data_disk: true
+      authorization:
+        sudo:
+          users:
+           - <%= ENV["SSH_USER"] || 'vagrant' %>
   - name: mgt-kvm-cosmic
     driver:
       customize:
@@ -64,6 +73,10 @@ suites:
     attributes:
       bubble:
         data_disk: true
+      authorization:
+        sudo:
+          users:
+           - <%= ENV["SSH_USER"] || 'vagrant' %>
   - name: mgt-kvm-basic-cosmic
     driver:
       customize:
@@ -77,3 +90,7 @@ suites:
     attributes:
       bubble:
         data_disk: true
+      authorization:
+        sudo:
+          users:
+           - <%= ENV["SSH_USER"] || 'vagrant' %>

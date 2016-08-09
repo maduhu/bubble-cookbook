@@ -14,3 +14,7 @@ suites:
     run_list:
       - recipe[bubble::default]
     attributes:
+      authorization:
+        sudo:
+          users:
+           - vagrant
