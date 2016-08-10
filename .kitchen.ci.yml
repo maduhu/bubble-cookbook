@@ -23,6 +23,10 @@ provisioner:
   root_path:                /home/<%= ENV['SSH_USER'] %>/kitchen
   data_bags_path:           test/fixtures/data_bags
 
+verifier:
+  name:       busser
+  root_path:  /home/<%= ENV['SSH_USER'] %>/verifier
+
 platforms:
   - name: 'CentOS7'
     driver:
@@ -38,6 +42,11 @@ suites:
           generate_firewall: True
     run_list:
       - recipe[bubble::default]
+    attributes:
+      authorization:
+        sudo:
+          users:
+           - <%= ENV["SSH_USER"] || 'vagrant' %>
   - name: mgt-kvm-acs
     driver:
       customize:
@@ -51,6 +60,10 @@ suites:
     attributes:
       bubble:
         data_disk: true
+      authorization:
+        sudo:
+          users:
+           - <%= ENV["SSH_USER"] || 'vagrant' %>
   - name: mgt-kvm-cosmic
     driver:
       customize:
@@ -64,6 +77,10 @@ suites:
     attributes:
       bubble:
         data_disk: true
+      authorization:
+        sudo:
+          users:
+           - <%= ENV["SSH_USER"] || 'vagrant' %>
   - name: mgt-kvm-basic-cosmic
     driver:
       customize:
@@ -77,3 +94,7 @@ suites:
     attributes:
       bubble:
         data_disk: true
+      authorization:
+        sudo:
+          users:
+           - <%= ENV["SSH_USER"] || 'vagrant' %>
