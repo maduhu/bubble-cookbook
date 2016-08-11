@@ -26,7 +26,7 @@ shared_examples 'bubble::default_tests' do
   end
 
   describe file('/etc/resolv.conf') do
-    its(:content) { should match /^search cloud.lan$/ }
+    its(:content) { should match /^search cloud.lan/ }
     its(:content) { should match /^nameserver 192.168.22.1$/ }
   end
 end
