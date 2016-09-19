@@ -9,6 +9,7 @@ include_recipe 'bubble::softethervpn-server' if node['bubble']['softethervpn-ser
 include_recipe 'bubble::internal-templates' if node['bubble']['internal-templates']
 include_recipe 'bubble::cloudinit-metaserv' if node['bubble']['cloudinit-metaserv']
 include_recipe 'sudo' if node['bubble']['sudo']
+include_recipe 'bubble::docker' if node['bubble']['docker']
 
 # Copy KVM configuration files
 remote_directory '/tmp/libvirt' do
