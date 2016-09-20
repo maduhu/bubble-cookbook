@@ -17,6 +17,7 @@ or other application using the libvirt API.
   <mac address='52:54:00:c3:7b:a9' />
   <domain name='cloud.lan' />
   <dns>
+    <forwarder addr='127.0.0.1' />
     <host ip='192.168.23.1'>
       <hostname>192-168-23-1.cloud.lan</hostname>
     </host>

@@ -22,6 +22,7 @@ default['bubble']['softethervpn-psk'] = 'softether'
 default['bubble']['community-templates'] = true
 default['bubble']['cloudinit-metaserv'] = true
 default['bubble']['cloudinit-password'] = 'password'
+default['bubble']['docker'] = true
 
 default['bubble']['systemvm_template']['jenkins_url']  = 'https://beta-jenkins.mcc.schubergphilis.com/job/cosmic-systemvm/job/packer-build/lastSuccessfulBuild/artifact/packer_output/'
 default['bubble']['systemvm_template']['jenkins_md5']  = 'md5.txt'
