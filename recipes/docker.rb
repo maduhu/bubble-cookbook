@@ -12,6 +12,7 @@ user 'coredns' do
   gid node['bubble']['group_name']
   home '/home/coredns'
   shell '/bin/bash'
+  manage_home true
 end
 
 # Create directory for coredns binary
