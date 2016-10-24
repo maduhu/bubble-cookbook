@@ -5,6 +5,8 @@ if `/usr/sbin/ip a`.include? "virbr0"
     bridge 'virbr0'
     fixed_cidr '192.168.22.224/27'
     action [:create]
+    notifies :create, 'cookbook_file[/opt/bin/dnsthing.py]'
+    notifies :create, 'cookbook_file[/etc/systemd/system/dnsthing.service]'
   end
 end
 
@@ -82,7 +84,7 @@ cookbook_file '/opt/bin/dnsthing.py' do
   owner 'coredns'
   group node['bubble']['group_name']
   mode '0755'
-  action :create
+  action :nothing
   notifies :restart, 'service[dnsthing]', :delayed
 end
 
@@ -92,7 +94,7 @@ cookbook_file '/etc/systemd/system/dnsthing.service' do
   owner 'root'
   owner 'root'
   mode '0644'
-  action :create
+  action :nothing
   notifies :restart, 'service[dnsthing]', :delayed
 end
 
