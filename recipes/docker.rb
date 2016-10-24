@@ -1,9 +1,11 @@
 # Add docker service.
-docker_service 'default' do
-  group node['bubble']['group_name']
-  bridge 'virbr0'
-  fixed_cidr '192.168.22.224/27'
-  action [:create, :start]
+if `/usr/sbin/ip a`.include? "virbr0"
+  docker_service 'default' do
+    group node['bubble']['group_name']
+    bridge 'virbr0'
+    fixed_cidr '192.168.22.224/27'
+    action [:create]
+  end
 end
 
 # Add a user for coredns
