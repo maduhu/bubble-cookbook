@@ -97,6 +97,7 @@ bash 'Configure_NAT_network' do
   virsh net-autostart NAT
 EOH
   not_if { ::File.exist?('/etc/libvirt/qemu/networks/NAT.xml') }
+  notifies :request_reboot, 'reboot[Reboot for networking]', :delayed
 end
 
 bash 'Configure_default_images_dir' do
@@ -111,6 +112,7 @@ bash 'Configure_default_images_dir' do
    virsh pool-start default
 EOH
   not_if { ::File.exist?('/etc/libvirt/storage/autostart/default.xml') }
+  notifies :request_reboot, 'reboot[Reboot for networking]', :delayed
 end
 
 bash 'Configure_default_iso_dir' do
@@ -124,6 +126,7 @@ bash 'Configure_default_iso_dir' do
    virsh pool-start iso
 EOH
   not_if { ::File.exist?('/etc/libvirt/storage/autostart/iso.xml') }
+  notifies :request_reboot, 'reboot[Reboot for networking]', :delayed
 end
 
 # Create base directory structure on /data
@@ -147,3 +150,7 @@ end
 
 # Install python clint for kvm_local_deploy
 python_pip 'clint'
+
+reboot 'Reboot for networking' do
+  action :nothing
+end
