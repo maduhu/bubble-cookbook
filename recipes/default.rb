@@ -12,8 +12,11 @@ include_recipe 'sudo' if node['bubble']['sudo']
 include_recipe 'bubble::docker' if node['bubble']['docker']
 include_recipe 'bubble::minikube' if node['bubble']['minikube']
 
+# Use Chef cache as tmp location
+tmp_loc = Chef::Config[:file_cache_path]
+
 # Copy KVM configuration files
-remote_directory '/tmp/libvirt' do
+remote_directory "/#{tmp_loc}/libvirt" do
   source 'libvirt'
 end
 
@@ -85,7 +88,7 @@ end
 # Import libvirt configurations
 bash 'Configure_NAT_network' do
   user 'root'
-  cwd '/tmp/libvirt'
+  cwd "/#{tmp_loc}/libvirt"
   code <<-EOH
   virsh net-destroy default
   virsh net-undefine default
@@ -98,7 +101,7 @@ end
 
 bash 'Configure_default_images_dir' do
   user 'root'
-  cwd '/tmp/libvirt'
+  cwd "#{tmp_loc}/libvirt"
   code <<-EOH
    virsh pool-destroy default
    virsh pool-undefine default
@@ -112,7 +115,7 @@ end
 
 bash 'Configure_default_iso_dir' do
   user 'root'
-  cwd '/tmp/libvirt'
+  cwd "/#{tmp_loc}/libvirt"
   code <<-EOH
    virsh pool-destroy iso
    virsh pool-define pool_iso.xml
