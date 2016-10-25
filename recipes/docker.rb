@@ -103,4 +103,5 @@ python_pip 'docker-py'
 # Enable and start the dnsthing server service
 service 'dnsthing' do
   action [:enable, :start]
+  only_if { ::File.exist?('/etc/systemd/system/dnsthing.service') }
 end
