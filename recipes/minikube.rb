@@ -15,3 +15,8 @@ remote_file '/usr/local/bin/minikube' do
   mode '0755'
   backup false
 end
+
+bash 'kubectl_tabcompletion' do
+  code 'echo "source <(kubectl completion bash)" >> /etc/bashrc'
+  not_if { `cat /etc/bashrc`.include? 'source <(kubectl completion bash)' }
+end
