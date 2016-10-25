@@ -28,3 +28,12 @@ default['bubble']['systemvm_template']['jenkins_url']  = 'https://beta-jenkins.m
 default['bubble']['systemvm_template']['jenkins_md5']  = 'md5.txt'
 default['bubble']['systemvm_template']['internal_md5'] = 'cosmic-systemvm_md5.txt'
 default['bubble']['systemvm_template']['name']         = 'cosmic-systemvm'
+
+default['bubble']['minikube'] = true
+default['bubble']['kubectl_download_url']                   = 'https://storage.googleapis.com/kubernetes-release/release/v1.3.0/bin/linux/amd64/kubectl'
+default['bubble']['docker-machine-driver-kvm_download_url'] = 'https://github.com/dhiltgen/docker-machine-kvm/releases/download/v0.7.0/docker-machine-driver-kvm'
+
+####### Use custom patched version to be able to specify the KVM network
+# default['bubble']['minikube_download_url']                  = 'https://storage.googleapis.com/minikube/releases/v0.12.0/minikube-linux-amd64'
+default['bubble']['minikube_download_url']                  = 'https://github.com/borisroman/minikube/releases/download/v0.12.0/minikube-linux-amd64'
+
