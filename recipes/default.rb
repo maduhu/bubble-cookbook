@@ -10,9 +10,13 @@ include_recipe 'bubble::internal-templates' if node['bubble']['internal-template
 include_recipe 'bubble::cloudinit-metaserv' if node['bubble']['cloudinit-metaserv']
 include_recipe 'sudo' if node['bubble']['sudo']
 include_recipe 'bubble::docker' if node['bubble']['docker']
+include_recipe 'bubble::minikube' if node['bubble']['minikube']
+
+# Use Chef cache as tmp location
+tmp_loc = Chef::Config[:file_cache_path]
 
 # Copy KVM configuration files
-remote_directory '/tmp/libvirt' do
+remote_directory "/#{tmp_loc}/libvirt" do
   source 'libvirt'
 end
 
@@ -84,7 +88,7 @@ end
 # Import libvirt configurations
 bash 'Configure_NAT_network' do
   user 'root'
-  cwd '/tmp/libvirt'
+  cwd "/#{tmp_loc}/libvirt"
   code <<-EOH
   virsh net-destroy default
   virsh net-undefine default
@@ -93,11 +97,12 @@ bash 'Configure_NAT_network' do
   virsh net-autostart NAT
 EOH
   not_if { ::File.exist?('/etc/libvirt/qemu/networks/NAT.xml') }
+  notifies :request_reboot, 'reboot[Reboot for networking]', :delayed
 end
 
 bash 'Configure_default_images_dir' do
   user 'root'
-  cwd '/tmp/libvirt'
+  cwd "#{tmp_loc}/libvirt"
   code <<-EOH
    virsh pool-destroy default
    virsh pool-undefine default
@@ -107,11 +112,12 @@ bash 'Configure_default_images_dir' do
    virsh pool-start default
 EOH
   not_if { ::File.exist?('/etc/libvirt/storage/autostart/default.xml') }
+  notifies :request_reboot, 'reboot[Reboot for networking]', :delayed
 end
 
 bash 'Configure_default_iso_dir' do
   user 'root'
-  cwd '/tmp/libvirt'
+  cwd "/#{tmp_loc}/libvirt"
   code <<-EOH
    virsh pool-destroy iso
    virsh pool-define pool_iso.xml
@@ -120,6 +126,7 @@ bash 'Configure_default_iso_dir' do
    virsh pool-start iso
 EOH
   not_if { ::File.exist?('/etc/libvirt/storage/autostart/iso.xml') }
+  notifies :request_reboot, 'reboot[Reboot for networking]', :delayed
 end
 
 # Create base directory structure on /data
@@ -143,3 +150,7 @@ end
 
 # Install python clint for kvm_local_deploy
 python_pip 'clint'
+
+reboot 'Reboot for networking' do
+  action :nothing
+end
