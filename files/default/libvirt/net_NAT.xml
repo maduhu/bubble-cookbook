@@ -783,6 +783,765 @@ or other application using the libvirt API.
     <host ip='192.168.23.255'>
       <hostname>192-168-23-255.cloud.lan</hostname>
     </host>
+    <host ip='192.168.42.2'>
+      <hostname>192-168-42-2.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.3'>
+      <hostname>192-168-42-3.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.4'>
+      <hostname>192-168-42-4.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.5'>
+      <hostname>192-168-42-5.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.6'>
+      <hostname>192-168-42-6.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.7'>
+      <hostname>192-168-42-7.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.8'>
+      <hostname>192-168-42-8.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.9'>
+      <hostname>192-168-42-9.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.10'>
+      <hostname>192-168-42-10.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.11'>
+      <hostname>192-168-42-11.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.12'>
+      <hostname>192-168-42-12.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.13'>
+      <hostname>192-168-42-13.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.14'>
+      <hostname>192-168-42-14.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.15'>
+      <hostname>192-168-42-15.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.16'>
+      <hostname>192-168-42-16.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.17'>
+      <hostname>192-168-42-17.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.18'>
+      <hostname>192-168-42-18.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.19'>
+      <hostname>192-168-42-19.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.20'>
+      <hostname>192-168-42-20.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.21'>
+      <hostname>192-168-42-21.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.22'>
+      <hostname>192-168-42-22.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.23'>
+      <hostname>192-168-42-23.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.24'>
+      <hostname>192-168-42-24.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.25'>
+      <hostname>192-168-42-25.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.26'>
+      <hostname>192-168-42-26.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.27'>
+      <hostname>192-168-42-27.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.28'>
+      <hostname>192-168-42-28.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.29'>
+      <hostname>192-168-42-29.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.30'>
+      <hostname>192-168-42-30.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.31'>
+      <hostname>192-168-42-31.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.32'>
+      <hostname>192-168-42-32.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.33'>
+      <hostname>192-168-42-33.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.34'>
+      <hostname>192-168-42-34.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.35'>
+      <hostname>192-168-42-35.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.36'>
+      <hostname>192-168-42-36.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.37'>
+      <hostname>192-168-42-37.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.38'>
+      <hostname>192-168-42-38.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.39'>
+      <hostname>192-168-42-39.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.40'>
+      <hostname>192-168-42-40.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.41'>
+      <hostname>192-168-42-41.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.42'>
+      <hostname>192-168-42-42.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.43'>
+      <hostname>192-168-42-43.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.44'>
+      <hostname>192-168-42-44.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.45'>
+      <hostname>192-168-42-45.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.46'>
+      <hostname>192-168-42-46.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.47'>
+      <hostname>192-168-42-47.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.48'>
+      <hostname>192-168-42-48.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.49'>
+      <hostname>192-168-42-49.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.50'>
+      <hostname>192-168-42-50.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.51'>
+      <hostname>192-168-42-51.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.52'>
+      <hostname>192-168-42-52.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.53'>
+      <hostname>192-168-42-53.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.54'>
+      <hostname>192-168-42-54.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.55'>
+      <hostname>192-168-42-55.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.56'>
+      <hostname>192-168-42-56.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.57'>
+      <hostname>192-168-42-57.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.58'>
+      <hostname>192-168-42-58.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.59'>
+      <hostname>192-168-42-59.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.60'>
+      <hostname>192-168-42-60.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.61'>
+      <hostname>192-168-42-61.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.62'>
+      <hostname>192-168-42-62.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.63'>
+      <hostname>192-168-42-63.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.64'>
+      <hostname>192-168-42-64.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.65'>
+      <hostname>192-168-42-65.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.66'>
+      <hostname>192-168-42-66.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.67'>
+      <hostname>192-168-42-67.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.68'>
+      <hostname>192-168-42-68.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.69'>
+      <hostname>192-168-42-69.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.70'>
+      <hostname>192-168-42-70.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.71'>
+      <hostname>192-168-42-71.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.72'>
+      <hostname>192-168-42-72.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.73'>
+      <hostname>192-168-42-73.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.74'>
+      <hostname>192-168-42-74.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.75'>
+      <hostname>192-168-42-75.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.76'>
+      <hostname>192-168-42-76.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.77'>
+      <hostname>192-168-42-77.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.78'>
+      <hostname>192-168-42-78.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.79'>
+      <hostname>192-168-42-79.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.80'>
+      <hostname>192-168-42-80.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.81'>
+      <hostname>192-168-42-81.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.82'>
+      <hostname>192-168-42-82.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.83'>
+      <hostname>192-168-42-83.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.84'>
+      <hostname>192-168-42-84.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.85'>
+      <hostname>192-168-42-85.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.86'>
+      <hostname>192-168-42-86.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.87'>
+      <hostname>192-168-42-87.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.88'>
+      <hostname>192-168-42-88.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.89'>
+      <hostname>192-168-42-89.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.90'>
+      <hostname>192-168-42-90.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.91'>
+      <hostname>192-168-42-91.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.92'>
+      <hostname>192-168-42-92.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.93'>
+      <hostname>192-168-42-93.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.94'>
+      <hostname>192-168-42-94.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.95'>
+      <hostname>192-168-42-95.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.96'>
+      <hostname>192-168-42-96.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.97'>
+      <hostname>192-168-42-97.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.98'>
+      <hostname>192-168-42-98.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.99'>
+      <hostname>192-168-42-99.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.100'>
+      <hostname>192-168-42-100.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.101'>
+      <hostname>192-168-42-101.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.102'>
+      <hostname>192-168-42-102.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.103'>
+      <hostname>192-168-42-103.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.104'>
+      <hostname>192-168-42-104.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.105'>
+      <hostname>192-168-42-105.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.106'>
+      <hostname>192-168-42-106.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.107'>
+      <hostname>192-168-42-107.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.108'>
+      <hostname>192-168-42-108.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.109'>
+      <hostname>192-168-42-109.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.110'>
+      <hostname>192-168-42-110.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.111'>
+      <hostname>192-168-42-111.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.112'>
+      <hostname>192-168-42-112.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.113'>
+      <hostname>192-168-42-113.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.114'>
+      <hostname>192-168-42-114.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.115'>
+      <hostname>192-168-42-115.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.116'>
+      <hostname>192-168-42-116.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.117'>
+      <hostname>192-168-42-117.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.118'>
+      <hostname>192-168-42-118.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.119'>
+      <hostname>192-168-42-119.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.120'>
+      <hostname>192-168-42-120.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.121'>
+      <hostname>192-168-42-121.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.122'>
+      <hostname>192-168-42-122.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.123'>
+      <hostname>192-168-42-123.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.124'>
+      <hostname>192-168-42-124.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.125'>
+      <hostname>192-168-42-125.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.126'>
+      <hostname>192-168-42-126.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.127'>
+      <hostname>192-168-42-127.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.128'>
+      <hostname>192-168-42-128.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.129'>
+      <hostname>192-168-42-129.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.130'>
+      <hostname>192-168-42-130.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.131'>
+      <hostname>192-168-42-131.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.132'>
+      <hostname>192-168-42-132.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.133'>
+      <hostname>192-168-42-133.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.134'>
+      <hostname>192-168-42-134.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.135'>
+      <hostname>192-168-42-135.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.136'>
+      <hostname>192-168-42-136.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.137'>
+      <hostname>192-168-42-137.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.138'>
+      <hostname>192-168-42-138.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.139'>
+      <hostname>192-168-42-139.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.140'>
+      <hostname>192-168-42-140.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.141'>
+      <hostname>192-168-42-141.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.142'>
+      <hostname>192-168-42-142.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.143'>
+      <hostname>192-168-42-143.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.144'>
+      <hostname>192-168-42-144.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.145'>
+      <hostname>192-168-42-145.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.146'>
+      <hostname>192-168-42-146.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.147'>
+      <hostname>192-168-42-147.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.148'>
+      <hostname>192-168-42-148.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.149'>
+      <hostname>192-168-42-149.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.150'>
+      <hostname>192-168-42-150.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.151'>
+      <hostname>192-168-42-151.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.152'>
+      <hostname>192-168-42-152.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.153'>
+      <hostname>192-168-42-153.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.154'>
+      <hostname>192-168-42-154.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.155'>
+      <hostname>192-168-42-155.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.156'>
+      <hostname>192-168-42-156.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.157'>
+      <hostname>192-168-42-157.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.158'>
+      <hostname>192-168-42-158.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.159'>
+      <hostname>192-168-42-159.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.160'>
+      <hostname>192-168-42-160.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.161'>
+      <hostname>192-168-42-161.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.162'>
+      <hostname>192-168-42-162.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.163'>
+      <hostname>192-168-42-163.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.164'>
+      <hostname>192-168-42-164.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.165'>
+      <hostname>192-168-42-165.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.166'>
+      <hostname>192-168-42-166.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.167'>
+      <hostname>192-168-42-167.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.168'>
+      <hostname>192-168-42-168.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.169'>
+      <hostname>192-168-42-169.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.170'>
+      <hostname>192-168-42-170.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.171'>
+      <hostname>192-168-42-171.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.172'>
+      <hostname>192-168-42-172.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.173'>
+      <hostname>192-168-42-173.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.174'>
+      <hostname>192-168-42-174.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.175'>
+      <hostname>192-168-42-175.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.176'>
+      <hostname>192-168-42-176.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.177'>
+      <hostname>192-168-42-177.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.178'>
+      <hostname>192-168-42-178.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.179'>
+      <hostname>192-168-42-179.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.180'>
+      <hostname>192-168-42-180.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.181'>
+      <hostname>192-168-42-181.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.182'>
+      <hostname>192-168-42-182.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.183'>
+      <hostname>192-168-42-183.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.184'>
+      <hostname>192-168-42-184.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.185'>
+      <hostname>192-168-42-185.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.186'>
+      <hostname>192-168-42-186.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.187'>
+      <hostname>192-168-42-187.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.188'>
+      <hostname>192-168-42-188.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.189'>
+      <hostname>192-168-42-189.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.190'>
+      <hostname>192-168-42-190.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.191'>
+      <hostname>192-168-42-191.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.192'>
+      <hostname>192-168-42-192.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.193'>
+      <hostname>192-168-42-193.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.194'>
+      <hostname>192-168-42-194.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.195'>
+      <hostname>192-168-42-195.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.196'>
+      <hostname>192-168-42-196.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.197'>
+      <hostname>192-168-42-197.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.198'>
+      <hostname>192-168-42-198.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.199'>
+      <hostname>192-168-42-199.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.200'>
+      <hostname>192-168-42-200.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.201'>
+      <hostname>192-168-42-201.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.202'>
+      <hostname>192-168-42-202.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.203'>
+      <hostname>192-168-42-203.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.204'>
+      <hostname>192-168-42-204.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.205'>
+      <hostname>192-168-42-205.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.206'>
+      <hostname>192-168-42-206.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.207'>
+      <hostname>192-168-42-207.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.208'>
+      <hostname>192-168-42-208.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.209'>
+      <hostname>192-168-42-209.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.210'>
+      <hostname>192-168-42-210.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.211'>
+      <hostname>192-168-42-211.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.212'>
+      <hostname>192-168-42-212.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.213'>
+      <hostname>192-168-42-213.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.214'>
+      <hostname>192-168-42-214.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.215'>
+      <hostname>192-168-42-215.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.216'>
+      <hostname>192-168-42-216.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.217'>
+      <hostname>192-168-42-217.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.218'>
+      <hostname>192-168-42-218.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.219'>
+      <hostname>192-168-42-219.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.220'>
+      <hostname>192-168-42-220.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.221'>
+      <hostname>192-168-42-221.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.222'>
+      <hostname>192-168-42-222.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.223'>
+      <hostname>192-168-42-223.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.224'>
+      <hostname>192-168-42-224.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.225'>
+      <hostname>192-168-42-225.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.226'>
+      <hostname>192-168-42-226.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.227'>
+      <hostname>192-168-42-227.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.228'>
+      <hostname>192-168-42-228.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.229'>
+      <hostname>192-168-42-229.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.230'>
+      <hostname>192-168-42-230.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.231'>
+      <hostname>192-168-42-231.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.232'>
+      <hostname>192-168-42-232.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.233'>
+      <hostname>192-168-42-233.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.234'>
+      <hostname>192-168-42-234.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.235'>
+      <hostname>192-168-42-235.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.236'>
+      <hostname>192-168-42-236.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.237'>
+      <hostname>192-168-42-237.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.238'>
+      <hostname>192-168-42-238.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.239'>
+      <hostname>192-168-42-239.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.240'>
+      <hostname>192-168-42-240.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.241'>
+      <hostname>192-168-42-241.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.242'>
+      <hostname>192-168-42-242.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.243'>
+      <hostname>192-168-42-243.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.244'>
+      <hostname>192-168-42-244.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.245'>
+      <hostname>192-168-42-245.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.246'>
+      <hostname>192-168-42-246.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.247'>
+      <hostname>192-168-42-247.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.248'>
+      <hostname>192-168-42-248.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.249'>
+      <hostname>192-168-42-249.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.250'>
+      <hostname>192-168-42-250.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.251'>
+      <hostname>192-168-42-251.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.252'>
+      <hostname>192-168-42-252.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.253'>
+      <hostname>192-168-42-253.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.42.254'>
+      <hostname>192-168-42-254.cloud.lan</hostname>
+    </host>
   </dns>
   <ip address='192.168.22.1' netmask='255.255.255.0'>
     <dhcp>
