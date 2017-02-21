@@ -50,6 +50,29 @@ templates.each do |dest_name, urls|
   end
 end
 
+jenkins_templates = {
+    'cosmic-centos-7.qcow2' => {
+        checksum: 'https://beta-jenkins.mcc.schubergphilis.com/job/bubble-templates/job/packer-cron/lastSuccessfulBuild/artifact/cosmic-centos-7/packer_output/md5.txt',
+        url: 'https://beta-jenkins.mcc.schubergphilis.com/job/bubble-templates/job/packer-cron/lastSuccessfulBuild/artifact/cosmic-centos-7/packer_output/cosmic-centos-7.qcow2'
+    }
+}
+
+jenkins_templates.each do |dest_name, urls|
+  remote_file "#{dest_path}/#{dest_name}.checksum" do
+    source "#{urls[:checksum]}"
+    mode '0644'
+    backup false
+    notifies :create, "remote_file[#{dest_path}/#{dest_name}]", :immediately
+  end
+
+  remote_file "#{dest_path}/#{dest_name}" do
+    source "#{urls[:url]}"
+    mode '0644'
+    backup false
+    action :nothing
+  end
+end
+
 remote_file "#{dest_path}/#{node['bubble']['systemvm_template']['internal_md5']}" do
   source "#{node['bubble']['systemvm_template']['jenkins_url']}/#{node['bubble']['systemvm_template']['jenkins_md5']}"
   mode '0644'
