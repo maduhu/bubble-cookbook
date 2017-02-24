@@ -42,3 +42,8 @@ end
 
 # Install python clint for kvm_local_deploy
 python_pip 'clint'
+
+# Disable and stop firewalld
+service "firewalld" do
+  action [ :disable, :stop ]
+end
