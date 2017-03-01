@@ -1,10 +1,11 @@
 # Add docker service.
 if `/usr/sbin/ip a`.include? "virbr0"
   docker_service 'default' do
+    host ['unix:///var/run/docker.sock', 'tcp://127.0.0.1:2375']
     group node['bubble']['group_name']
     bridge 'virbr0'
     fixed_cidr '192.168.22.224/27'
-    action [:create]
+    action [:create, :start]
     notifies :create, 'cookbook_file[/opt/bin/dnsthing.py]'
     notifies :create, 'cookbook_file[/etc/systemd/system/dnsthing.service]'
   end
