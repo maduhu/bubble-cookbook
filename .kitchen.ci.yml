@@ -17,14 +17,13 @@ driver:
     ssh_user:               <%= ENV["SSH_USER"] || 'vagrant' %>
 
 provisioner:
-  name: chef_zero
+  name: chef_solo
   require_chef_omnibus:     <%= ENV['OMNIBUS_CHEF_CLIENT_VERSION'] || '12.11' %>
   kitchen_root:             /home/<%= ENV['SSH_USER'] %>/kitchen
   root_path:                /home/<%= ENV['SSH_USER'] %>/kitchen
   data_bags_path:           test/fixtures/data_bags
   retry_on_exit_code:
    - 35
-   - 1
   max_retries: 1
   client_rb:
     exit_status: enabled
