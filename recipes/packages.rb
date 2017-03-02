@@ -28,7 +28,13 @@ end
 end
 
 # Packages for running marvin (compile scripts) on the bubble itself
-%w(maven python-paramiko ws-commons-util genisoimage gcc python MySQL-python mariadb mysql-connector-python
+# remove maven yum package if present
+package 'maven' do
+  action :remove
+end
+include_recipe 'maven::default'
+
+%w(python-paramiko ws-commons-util genisoimage gcc python MySQL-python mariadb mysql-connector-python
    ).each do |pkg|
   package pkg do
     action :install
