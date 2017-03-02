@@ -42,7 +42,12 @@ include_recipe 'maven::default'
 end
 
 # required java & tools
-%w(apache-commons-daemon-jsvc java-1.8.0-openjdk-devel.x86_64 libffi-devel).each do |pkg|
+# Upgrade openjdk to 'latest' due to enhanced crypto support
+package 'java-1.8.0-openjdk-devel.x86_64' do
+  action :upgrade
+end
+
+%w(apache-commons-daemon-jsvc libffi-devel).each do |pkg|
   package pkg do
     action :install
   end
