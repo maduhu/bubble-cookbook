@@ -34,5 +34,8 @@ default['bubble']['kubectl_download_url']                   = 'https://storage.g
 default['bubble']['docker-machine-driver-kvm_download_url'] = 'https://github.com/dhiltgen/docker-machine-kvm/releases/download/v0.7.0/docker-machine-driver-kvm'
 default['bubble']['minikube_download_url']                  = 'https://storage.googleapis.com/minikube/releases/v0.16.0/minikube-linux-amd64'
 
+default['bubble']['helm'] = true
+default['bubble']['helm_download_url']                      = 'https://storage.googleapis.com/kubernetes-helm/helm-v2.2.2-linux-amd64.tar.gz'
+
 # Keep settings default and allow settting at project level
 force_default['maven']['mavenrc']['opts'] = ''

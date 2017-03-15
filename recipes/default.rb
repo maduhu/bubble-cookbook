@@ -12,6 +12,7 @@ include_recipe 'sudo' if node['bubble']['sudo']
 include_recipe 'bubble::docker' if node['bubble']['docker']
 include_recipe 'bubble::libvirt'
 include_recipe 'bubble::minikube' if node['bubble']['minikube']
+include_recipe 'bubble::helm' if node['bubble']['helm']
 
 # Copy ssh_config to manage global SSH settings
 cookbook_file '/etc/ssh/ssh_config' do
