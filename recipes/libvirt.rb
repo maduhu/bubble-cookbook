@@ -4,6 +4,9 @@ tmp_loc = Chef::Config[:file_cache_path]
 # Copy KVM configuration files
 remote_directory "/#{tmp_loc}/libvirt" do
   source 'libvirt'
+
+  # Let users reboot bubble at their own discretion.
+  notifies :run, 'bash[Configure_libvirt_define_only]'
 end
 
 cookbook_file '/etc/modprobe.d/kvm-nested.conf' do
@@ -105,6 +108,18 @@ bash 'Configure_default_iso_dir' do
   EOH
   not_if { ::File.exist?('/etc/libvirt/storage/autostart/iso.xml') }
   notifies :request_reboot, 'reboot[Reboot for networking]', :delayed
+end
+
+# Import libvirt configurations define only
+bash 'Configure_libvirt_define_only' do
+  user 'root'
+  cwd "/#{tmp_loc}/libvirt"
+  code <<-EOH
+  virsh net-define net_NAT.xml
+  virsh pool-define pool_images.xml
+  virsh pool-define pool_iso.xml
+  EOH
+  action :nothing
 end
 
 reboot 'Reboot for networking' do
