@@ -3,8 +3,8 @@ dest_path = '/data/templates'
 
 templates = {
   'centos7.qcow2.bz2' => {
-    checksum: 'http://dl.openvm.eu/cloudstack/centos/vanilla/7/x86_64/CentOS-7-x86_64-vanilla.sha1sum.txt',
-    url: 'http://dl.openvm.eu/cloudstack/centos/vanilla/7/x86_64/CentOS-7-x86_64-vanilla-kvm.qcow2.bz2'
+    checksum: 'http://dl.openvm.eu/cloudstack/centos/x86_64/centos-7-kvm.qcow2.bz2.sha1sum',
+    url: 'http://dl.openvm.eu/cloudstack/centos/x86_64/centos-7-kvm.qcow2.bz2'
   },
   'tiny.qcow2.bz2' => {
     checksum: 'http://dl.openvm.eu/cloudstack/macchinina/x86_64/sha1sum.txt',
@@ -52,8 +52,12 @@ end
 
 jenkins_templates = {
     'cosmic-centos-7.qcow2' => {
-        checksum: 'https://beta-jenkins.mcc.schubergphilis.com/job/bubble-templates/job/packer-cron/lastSuccessfulBuild/artifact/cosmic-centos-7/packer_output/md5.txt',
+        checksum: 'https://beta-jenkins.mcc.schubergphilis.com/job/bubble-templates/job/packer-cron/lastSuccessfulBuild/artifact/cosmic-centos-7/packer_output/cosmic-centos-7.qcow2.md5',
         url: 'https://beta-jenkins.mcc.schubergphilis.com/job/bubble-templates/job/packer-cron/lastSuccessfulBuild/artifact/cosmic-centos-7/packer_output/cosmic-centos-7.qcow2'
+    },
+    'cloudstack-centos-6.qcow2' => {
+        checksum: 'https://beta-jenkins.mcc.schubergphilis.com/job/bubble-templates/job/packer-cron/lastSuccessfulBuild/artifact/cloudstack-centos-6/packer_output/cloudstack-centos-6.qcow2.md5',
+        url: 'https://beta-jenkins.mcc.schubergphilis.com/job/bubble-templates/job/packer-cron/lastSuccessfulBuild/artifact/cloudstack-centos-6/packer_output/cloudstack-centos-6.qcow2'
     }
 }
 
