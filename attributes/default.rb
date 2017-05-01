@@ -30,9 +30,9 @@ default['bubble']['systemvm_template']['internal_md5'] = 'cosmic-systemvm_md5.tx
 default['bubble']['systemvm_template']['name']         = 'cosmic-systemvm'
 
 default['bubble']['minikube'] = true
-default['bubble']['kubectl_download_url']                   = 'https://storage.googleapis.com/kubernetes-release/release/v1.5.3/bin/linux/amd64/kubectl'
+default['bubble']['kubectl_download_url']                   = 'https://storage.googleapis.com/kubernetes-release/release/v1.6.2/bin/linux/amd64/kubectl'
 default['bubble']['docker-machine-driver-kvm_download_url'] = 'https://github.com/dhiltgen/docker-machine-kvm/releases/download/v0.7.0/docker-machine-driver-kvm'
-default['bubble']['minikube_download_url']                  = 'https://storage.googleapis.com/minikube/releases/v0.16.0/minikube-linux-amd64'
+default['bubble']['minikube_download_url']                  = 'https://storage.googleapis.com/minikube/releases/v0.18.0/minikube-linux-amd64'
 
 default['bubble']['helm'] = true
 default['bubble']['helm_download_url']                      = 'https://storage.googleapis.com/kubernetes-helm/helm-v2.2.2-linux-amd64.tar.gz'
