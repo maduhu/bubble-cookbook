@@ -1542,6 +1542,276 @@ or other application using the libvirt API.
     <host ip='192.168.42.254'>
       <hostname>192-168-42-254.cloud.lan</hostname>
     </host>
+    <host ip='192.168.22.10'>
+      <hostname>xen0.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.11'>
+      <hostname>xen1.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.12'>
+      <hostname>xen2.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.13'>
+      <hostname>xen3.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.14'>
+      <hostname>xen4.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.15'>
+      <hostname>xen5.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.16'>
+      <hostname>xen6.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.17'>
+      <hostname>xen7.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.18'>
+      <hostname>xen8.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.19'>
+      <hostname>xen9.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.20'>
+      <hostname>kvm0.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.21'>
+      <hostname>kvm1.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.22'>
+      <hostname>kvm2.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.23'>
+      <hostname>kvm3.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.24'>
+      <hostname>kvm4.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.25'>
+      <hostname>kvm5.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.26'>
+      <hostname>kvm6.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.27'>
+      <hostname>kvm7.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.28'>
+      <hostname>kvm8.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.29'>
+      <hostname>kvm9.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.30'>
+      <hostname>ovm0.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.31'>
+      <hostname>ovm1.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.32'>
+      <hostname>ovm2.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.33'>
+      <hostname>ovm3.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.34'>
+      <hostname>ovm4.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.35'>
+      <hostname>ovm5.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.36'>
+      <hostname>ovm6.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.37'>
+      <hostname>ovm7.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.38'>
+      <hostname>ovm8.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.39'>
+      <hostname>ovm9.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.40'>
+      <hostname>net0.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.41'>
+      <hostname>net1.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.42'>
+      <hostname>net2.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.43'>
+      <hostname>net3.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.44'>
+      <hostname>net4.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.45'>
+      <hostname>net5.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.46'>
+      <hostname>net6.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.47'>
+      <hostname>net7.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.48'>
+      <hostname>net8.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.49'>
+      <hostname>net9.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.50'>
+      <hostname>prx0.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.51'>
+      <hostname>prx1.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.52'>
+      <hostname>prx2.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.53'>
+      <hostname>prx3.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.54'>
+      <hostname>prx4.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.55'>
+      <hostname>prx5.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.56'>
+      <hostname>prx6.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.57'>
+      <hostname>prx7.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.58'>
+      <hostname>prx8.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.59'>
+      <hostname>prx9.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.60'>
+      <hostname>cs0.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.61'>
+      <hostname>cs1.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.62'>
+      <hostname>cs2.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.63'>
+      <hostname>cs3.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.64'>
+      <hostname>cs4.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.65'>
+      <hostname>cs5.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.66'>
+      <hostname>cs6.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.67'>
+      <hostname>cs7.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.68'>
+      <hostname>cs8.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.69'>
+      <hostname>cs9.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.70'>
+      <hostname>db0.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.71'>
+      <hostname>db1.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.72'>
+      <hostname>db2.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.73'>
+      <hostname>db3.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.74'>
+      <hostname>db4.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.75'>
+      <hostname>db5.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.76'>
+      <hostname>db6.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.77'>
+      <hostname>db7.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.78'>
+      <hostname>db8.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.79'>
+      <hostname>db9.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.80'>
+      <hostname>nsxmgr1.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.81'>
+      <hostname>nsxmgr2.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.82'>
+      <hostname>nsxmgr3.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.83'>
+      <hostname>nsxcon1.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.84'>
+      <hostname>nsxcon2.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.85'>
+      <hostname>nsxcon3.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.86'>
+      <hostname>nsxcon4.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.87'>
+      <hostname>nsxcon5.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.88'>
+      <hostname>nsxcon6.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.89'>
+      <hostname>nsxsvc1.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.90'>
+      <hostname>nsxsvc2.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.91'>
+      <hostname>nsxsvc3.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.92'>
+      <hostname>nsxsvc4.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.93'>
+      <hostname>nsxsvc5.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.94'>
+      <hostname>nsxsvc6.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.95'>
+      <hostname>sdn1.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.96'>
+      <hostname>gen0.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.97'>
+      <hostname>gen1.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.98'>
+      <hostname>gen2.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.22.99'>
+      <hostname>gen3.cloud.lan</hostname>
+    </host>
   </dns>
   <ip address='192.168.22.1' netmask='255.255.255.0'>
     <dhcp>
