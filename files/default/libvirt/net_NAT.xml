@@ -14,6 +14,7 @@ or other application using the libvirt API.
     </nat>
   </forward>
   <bridge name='virbr0' stp='on' delay='0' />
+  <mtu size="1600"/>
   <mac address='52:54:00:c3:7b:a9' />
   <domain name='cloud.lan' />
   <dns>
